@@ -1,0 +1,11 @@
+/Users/jay/Projects/Jay8.TestSuite/Jay8.Android/obj/Release/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+/Users/jay/Projects/Jay8.TestSuite/Jay8.Android/obj/Release/Jay8.Android.Resources.AndroidManifest.xml
+/Users/jay/Projects/Jay8.TestSuite/Jay8.Android/obj/Release/Jay8.Android.Resources.apktool-cli-1.5.3-SNAPSHOT.jar
+/Users/jay/Projects/Jay8.TestSuite/Jay8.Android/obj/Release/Jay8.Android.Resources.TestServer.apk
+/Users/jay/Projects/Jay8.TestSuite/Jay8.Android/bin/Release/Resources/AndroidManifest.xml
+/Users/jay/Projects/Jay8.TestSuite/Jay8.Android/bin/Release/Resources/apktool-cli-1.5.3-SNAPSHOT.jar
+/Users/jay/Projects/Jay8.TestSuite/Jay8.Android/bin/Release/Resources/TestServer.apk
+/Users/jay/Projects/Jay8.TestSuite/Jay8.Android/bin/Release/Jay8.Android.dll.mdb
+/Users/jay/Projects/Jay8.TestSuite/Jay8.Android/bin/Release/Jay8.Android.dll
+/Users/jay/Projects/Jay8.TestSuite/Jay8.Android/obj/Release/Jay8.Android.dll
+/Users/jay/Projects/Jay8.TestSuite/Jay8.Android/obj/Release/Jay8.Android.dll.mdb

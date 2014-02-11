@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C38C09C4-027D-4CED-88A6-113CAB37A0FC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Jay8.Android</RootNamespace>
+    <AssemblyName>Jay8.Android</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="ICSharpCode.SharpZipLib" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AndroidTestRunner.cs" />
+    <Compile Include="Unzip.cs" />
+    <Compile Include="FingerprintHelper.cs" />
+    <Compile Include="KeystoreHelper.cs" />
+    <Compile Include="Environment.cs" />
+    <Compile Include="OutputHandler.cs" />
+    <Compile Include="StreamUtils.cs" />
+    <Compile Include="AndroidVersionHelper.cs" />
+    <Compile Include="Managed.Adb\AdbHelper.cs" />
+    <Compile Include="Managed.Adb\AdbResponse.cs" />
+    <Compile Include="Managed.Adb\AllocationInfo.cs" />
+    <Compile Include="Managed.Adb\AndroidDebugBridge.cs" />
+    <Compile Include="Managed.Adb\AndroidDebugBridgeEventArgs.cs" />
+    <Compile Include="Managed.Adb\BatteryInfo.cs" />
+    <Compile Include="Managed.Adb\BusyBox.cs" />
+    <Compile Include="Managed.Adb\ChunkHandler.cs" />
+    <Compile Include="Managed.Adb\Client.cs" />
+    <Compile Include="Managed.Adb\ClientData.cs" />
+    <Compile Include="Managed.Adb\ClientEventArgs.cs" />
+    <Compile Include="Managed.Adb\ColorData.cs" />
+    <Compile Include="Managed.Adb\Conversion\BigEndianBitConverter.cs" />
+    <Compile Include="Managed.Adb\Conversion\DoubleConverter.cs" />
+    <Compile Include="Managed.Adb\Conversion\EndianBitConverter.cs" />
+    <Compile Include="Managed.Adb\Conversion\Endianness.cs" />
+    <Compile Include="Managed.Adb\Conversion\LittleEndianBitConverter.cs" />
+    <Compile Include="Managed.Adb\DdmPreferences.cs" />
+    <Compile Include="Managed.Adb\Debugger.cs" />
+    <Compile Include="Managed.Adb\DebugPortManager.cs" />
+    <Compile Include="Managed.Adb\Device.cs" />
+    <Compile Include="Managed.Adb\DeviceEventArgs.cs" />
+    <Compile Include="Managed.Adb\DeviceMonitor.cs" />
+    <Compile Include="Managed.Adb\ErrorCodeHelper.cs" />
+    <Compile Include="Managed.Adb\Exceptions\AdbCommandRejectedException.cs" />
+    <Compile Include="Managed.Adb\Exceptions\AdbException.cs" />
+    <Compile Include="Managed.Adb\Exceptions\BadPacketException.cs" />
+    <Compile Include="Managed.Adb\Exceptions\CommandAbortingException.cs" />
+    <Compile Include="Managed.Adb\Exceptions\DeviceNotFoundException.cs" />
+    <Compile Include="Managed.Adb\Exceptions\PackageInstallationException.cs" />
+    <Compile Include="Managed.Adb\Exceptions\PermissionDeniedException.cs" />
+    <Compile Include="Managed.Adb\Exceptions\ShellCommandUnresponsiveException.cs" />
+    <Compile Include="Managed.Adb\Exceptions\UnknownOptionException.cs" />
+    <Compile Include="Managed.Adb\Extensions\ArrayHelper.cs" />
+    <Compile Include="Managed.Adb\Extensions\BytesHelper.cs" />
+    <Compile Include="Managed.Adb\Extensions\DateTimeHelper.cs" />
+    <Compile Include="Managed.Adb\Extensions\FileInfoHelper.cs" />
+    <Compile Include="Managed.Adb\Extensions\IntegerHelper.cs" />
+    <Compile Include="Managed.Adb\Extensions\MadbExtensions.cs" />
+    <Compile Include="Managed.Adb\Extensions\PathHelper.cs" />
+    <Compile Include="Managed.Adb\Extensions\ReflectionHelper.cs" />
+    <Compile Include="Managed.Adb\Extensions\StringHelper.cs" />
+    <Compile Include="Managed.Adb\FileEntry.cs" />
+    <Compile Include="Managed.Adb\FileListingService.cs" />
+    <Compile Include="Managed.Adb\FilePermission.cs" />
+    <Compile Include="Managed.Adb\FileSystem.cs" />
+    <Compile Include="Managed.Adb\IClient.cs" />
+    <Compile Include="Managed.Adb\IDebugPortProvider.cs" />
+    <Compile Include="Managed.Adb\IDevice.cs" />
+    <Compile Include="Managed.Adb\ILogOutput.cs" />
+    <Compile Include="Managed.Adb\IO\BEBinaryReader.cs" />
+    <Compile Include="Managed.Adb\IO\BEBinaryWriter.cs" />
+    <Compile Include="Managed.Adb\IO\ByteBuffer.cs" />
+    <Compile Include="Managed.Adb\IO\ByteOrder.cs" />
+    <Compile Include="Managed.Adb\IO\LinuxPath.cs" />
+    <Compile Include="Managed.Adb\IO\Rgb565.cs" />
+    <Compile Include="Managed.Adb\IPacketConsumer.cs" />
+    <Compile Include="Managed.Adb\ISyncProgressMonitor.cs" />
+    <Compile Include="Managed.Adb\JdwpPacket.cs" />
+    <Compile Include="Managed.Adb\Log.cs" />
+    <Compile Include="Managed.Adb\LogLevel.cs" />
+    <Compile Include="Managed.Adb\Logs\ILogListener.cs" />
+    <Compile Include="Managed.Adb\Logs\LogEntry.cs" />
+    <Compile Include="Managed.Adb\Logs\LogReceiver.cs" />
+    <Compile Include="Managed.Adb\MonitorThread.cs" />
+    <Compile Include="Managed.Adb\MoreLinq\AssertCount.cs" />
+    <Compile Include="Managed.Adb\MoreLinq\Batch.cs" />
+    <Compile Include="Managed.Adb\MoreLinq\Concat.cs" />
+    <Compile Include="Managed.Adb\MoreLinq\Consume.cs" />
+    <Compile Include="Managed.Adb\MoreLinq\DistinctBy.cs" />
+    <Compile Include="Managed.Adb\MoreLinq\ExceptBy.cs" />
+    <Compile Include="Managed.Adb\MoreLinq\ForEach.cs" />
+    <Compile Include="Managed.Adb\MoreLinq\Generate.cs" />
+    <Compile Include="Managed.Adb\MoreLinq\GenerateByIndex.cs" />
+    <Compile Include="Managed.Adb\MoreLinq\GroupAdjacent.cs" />
+    <Compile Include="Managed.Adb\MoreLinq\Index.cs" />
+    <Compile Include="Managed.Adb\MoreLinq\KeyValuePair.cs" />
+    <Compile Include="Managed.Adb\MoreLinq\MaxBy.cs" />
+    <Compile Include="Managed.Adb\MoreLinq\MinBy.cs" />
+    <Compile Include="Managed.Adb\MoreLinq\MoreEnumerable.cs" />
+    <Compile Include="Managed.Adb\MoreLinq\Pad.cs" />
+    <Compile Include="Managed.Adb\MoreLinq\Pairwise.cs" />
+    <Compile Include="Managed.Adb\MoreLinq\Pipe.cs" />
+    <Compile Include="Managed.Adb\MoreLinq\Prepend.cs" />
+    <Compile Include="Managed.Adb\MoreLinq\PreScan.cs" />
+    <Compile Include="Managed.Adb\MoreLinq\SequenceException.cs" />
+    <Compile Include="Managed.Adb\MoreLinq\ThrowIf.cs" />
+    <Compile Include="Managed.Adb\MountPoint.cs" />
+    <Compile Include="Managed.Adb\NullSyncProgressMonitor.cs" />
+    <Compile Include="Managed.Adb\PackageManager.cs" />
+    <Compile Include="Managed.Adb\RawImage.cs" />
+    <Compile Include="Managed.Adb\Receives\BatteryReceiver.cs" />
+    <Compile Include="Managed.Adb\Receives\CommandErrorReceiver.cs" />
+    <Compile Include="Managed.Adb\Receives\CommandResultReceiver.cs" />
+    <Compile Include="Managed.Adb\Receives\ConsoleOutputReceiver.cs" />
+    <Compile Include="Managed.Adb\Receives\EnvironmentVariablesReceiver.cs" />
+    <Compile Include="Managed.Adb\Receives\GetPropReceiver.cs" />
+    <Compile Include="Managed.Adb\Receives\IListingReceiver.cs" />
+    <Compile Include="Managed.Adb\Receives\InstallReceiver.cs" />
+    <Compile Include="Managed.Adb\Receives\IShellOutputReceiver.cs" />
+    <Compile Include="Managed.Adb\Receives\LinkResoverReceiver.cs" />
+    <Compile Include="Managed.Adb\Receives\ListingServiceReceiver.cs" />
+    <Compile Include="Managed.Adb\Receives\MountPointReceiver.cs" />
+    <Compile Include="Managed.Adb\Receives\MultilineReceiver.cs" />
+    <Compile Include="Managed.Adb\Receives\NullOutputReceiver.cs" />
+    <Compile Include="Managed.Adb\Receives\PackageManagerReceiver.cs" />
+    <Compile Include="Managed.Adb\SyncResult.cs" />
+    <Compile Include="Managed.Adb\SyncService.cs" />
+    <Compile Include="ApkInstallHelper.cs" />
+    <Compile Include="AndroidTestHelper.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Lib\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Managed.Adb\MoreLinq\MoreLinq-License.txt" />
+    <None Include="Lib\Newtonsoft.Json.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\AndroidManifest.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\apktool-cli-1.5.3-SNAPSHOT.jar">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\TestServer.apk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,14 @@
+/Users/jay/Projects/Jay8.TestSuite/TestApp/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+/Users/jay/Projects/Jay8.TestSuite/TestApp/bin/Debug/TestApp.exe.mdb
+/Users/jay/Projects/Jay8.TestSuite/TestApp/bin/Debug/TestApp.exe
+/Users/jay/Projects/Jay8.TestSuite/TestApp/obj/Debug/TestApp.exe
+/Users/jay/Projects/Jay8.TestSuite/TestApp/obj/Debug/TestApp.exe.mdb
+/Users/jay/Projects/Jay8.TestSuite/TestApp/bin/Debug/Jay8.Android.dll
+/Users/jay/Projects/Jay8.TestSuite/TestApp/bin/Debug/Jay8.Android.dll.mdb
+/Users/jay/Projects/Jay8.TestSuite/TestApp/bin/Debug/Managed.Adb.dll
+/Users/jay/Projects/Jay8.TestSuite/TestApp/bin/Debug/Managed.Adb.dll.mdb
+/Users/jay/Projects/Jay8.TestSuite/TestApp/bin/Debug/SharpCompress.dll
+/Users/jay/Projects/Jay8.TestSuite/TestApp/bin/Debug/Ionic.Zip.CF.dll
+/Users/jay/Projects/Jay8.TestSuite/TestApp/bin/Debug/Resources/TestServer.apk
+/Users/jay/Projects/Jay8.TestSuite/TestApp/bin/Debug/Resources/apktool-cli-1.5.3-SNAPSHOT.jar
+/Users/jay/Projects/Jay8.TestSuite/TestApp/bin/Debug/Resources/AndroidManifest.xml
